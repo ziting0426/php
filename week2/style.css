@@ -1,0 +1,230 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* start */
+.wrap{
+    display: flex;
+}
+.left{
+    width: 25%;
+}
+.right{
+    width: 75%;
+}
+.pink{
+    background: #ede2d9;
+    width: 100%;
+}
+.pink img{
+    padding-left: 15px;
+}
+.pink .img img{
+    width: 150px;
+}
+.contact{
+    padding-left: 15px;
+    padding-bottom: 50px;
+}
+.contact .phoneNum{
+    display: flex;
+    width: 150px;
+    border-bottom: 1px dashed #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.contact .phoneNum img{
+    width: 13px;
+}
+.contact .email{
+    display: flex;
+    width: 230px;
+    border-bottom: 1px dashed #000;
+    padding-bottom: 5px;
+}
+.contact .email img{
+    width: 13px;
+}
+.contact .address{
+    display: flex;
+    width: 230px;
+    border-bottom: 1px dashed #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.contact .address img{
+    width: 13px;
+}
+.skill h2{
+    font-weight: bold;
+    padding-left: 10px;
+    width: 240px;
+    padding-bottom: 5px;
+    background: #ede2d9;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.skill ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+.skill li{
+    padding-bottom: 10px;
+}
+.certifi h2{
+    font-weight: bold;
+    padding-left: 10px;
+    width: 240px;
+    padding-bottom: 5px;
+    background: #ede2d9;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.certifi ul{
+    list-style-type: disc;
+    padding-left: 30px;
+}
+.certifi li{
+    padding-bottom: 10px;
+}
+.right .name{
+    background: #555d50;
+    height: 333.08px;
+}
+.right .name .zeng{
+    padding: 50px;
+}
+.right .name .zeng h1{
+    font-size: 100px;
+    color: #fff;
+}
+.zeng h5{
+    font-size: 30px;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: #fff solid 1px;
+    color: #fff;
+}
+.shortIntro p{
+    padding-left: 80px;
+    font-size: 20px;
+    color: #fff;
+}
+.rightBottom{
+    display: flex;
+}
+.edu h2{
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-right: 30px;
+    width: 240px;
+    background: #ede2d9;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.experience h2{
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    width: 240px;
+    background: #ede2d9;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.edu{
+    width: 50%;
+    padding-right: 30px;
+}
+.experience{
+    width: 50%;
+}
+.experience ul{
+    list-style-type: disc;
+    padding-left: 30px;
+}
+.experience li{
+    padding-bottom: 10px;
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ede2d9;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #ede2d9;
+}
+tr:hover {
+    background-color: #ede2d9;
+}
+.footer{
+    padding: 8px;
+    justify-content: center;
+    display: flex;
+}
+.button {
+    border-radius: 20px;
+    border: #000 solid 2px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background: #e3dbcc;
+}
+.button a{
+    text-decoration: none;
+    color: #000;
+}
+.button h3{
+    font-weight: bold;
+}
+.button:hover{
+    background-color: #555d50;
+}
