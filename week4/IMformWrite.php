@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資管晚會報名表</title>
+</head>
+<body>
+    <?php
+        session_start();
+    ?>
+
+    <?php
+        if($_SESSION["check"] == "NO" || !(isset($_SESSION["check"]))){
+            header("Location:fail.php");
+        }
+    ?>
+    <form action="IMform.php" method="post">
+        <fieldset>
+            <legend>個人資料</legend>
+            <br>
+            <label for="name">名字:</label>
+            <input type="text" name="name" placeholder="請輸入名字" id="name" required>
+            <br>
+            <br>
+            <label for="email">email:</label>
+            <input type="email" name="email" placeholder="請輸入email" id="email" required>
+            <br>
+            <br>
+            <label for="pwd">密碼:</label>
+            <input type="password" name="pwd" placeholder="請輸入密碼" id="pwd" required>
+            <br>
+            <br>
+            <label for="address">地址:</label>
+            <textarea name="address" id="address" placeholder="請輸入居住地" cols="30" rows="2"></textarea>
+            <br>
+            <br>
+            <label for="age">年齡:</label>
+            <input type="number" name="age" placeholder="請輸入年齡" id="age">
+            <br>
+            <br>
+            <label for="birthday">出生日期:</label>
+            <input type="date" name="date" id="birthday">
+            <br>
+            <br>
+            <label for="male">性別:</label>
+            <input type="radio" name="gender" value="男" id="male">
+            <label for="male">男</label>
+            <input type="radio" name="gender" value="女" id="female">
+            <label for="female">女</label>
+            <br>
+            <br>
+            <label for="friend">活動資訊來源:</label>
+            <input type="checkbox" name="message" id="friend">
+            <label for="friend">親友介紹</label>
+            <input type="checkbox" name="message" id="socialMedia">
+            <label for="socialMedia">社群軟體</label>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="message" id="TV">
+            <label for="TV">電視廣告</label>
+            <input type="checkbox" name="message" id="paper">
+            <label for="paper">廣告傳單</label>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>活動相關資訊</legend>
+            <br>
+            <label for="time">當天到場時間:</label>
+            <input type="time" name="time" id="time">
+            <br>
+            <br>
+            <label for="shirtNum">衣服件數:</label>
+            <input type="number" name="shirtNum" placeholder="衣服件數" id="shirtNum">
+            <br>
+            <br>
+            衣服尺寸:
+            <select name="size[]" multiple>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <br>
+            <br>
+            <label for="degree">對活動期待程度:</label>
+            <input type="range" name="degree" id="degree">
+            <br>
+            <br>
+            <label for="photo">上傳本人照片:</label>
+            <input type="file" name="photo" id="photo">
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="送出報名">
+        <input type="reset" value="清除資料">
+    </form>
+    <?php
+        echo "<br>"."<a href='logout.php'>登出</a>";
+    ?>
+</body>
+</html>
