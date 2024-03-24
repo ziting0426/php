@@ -98,6 +98,7 @@
         <input type="reset" value="清除資料">
     </form>
     <?php
+        unset($_SESSION["check"]);
         echo "<br>"."<a href='logout.php'>登出</a>";
     ?>
 </body>
