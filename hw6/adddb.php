@@ -19,7 +19,7 @@
     echo $upname;
 
     //SQL語法
-    $SQL = "INSERT INTO info(Name, Dept, Img) VALUES('$sName','$sDept','upname')";
+    $SQL = "INSERT INTO info(Name, Dept, Img) VALUES('$sName','$sDept','$upname')";
 
     //送出查詢
     if($result = mysqli_query($link, $SQL)){
