@@ -1,0 +1,191 @@
+/*固定表頭*/
+.head0{
+    width:100%;
+	height:30px;
+	top:0;
+	left:0;
+}
+/*表頭*/
+.head{
+    height: 300px;
+    background: #BDE0F4;
+    margin-bottom: 30px;
+}
+/*表頭*/
+.word0{
+    font-size: 40px;
+    font-family: "Arial Black";
+    color: #00159F;
+    margin-left: 50px;
+    margin-bottom: 70px;
+    padding-top: 40px;
+}
+/*購物車、大頭貼、登出空間*/
+.info{
+    display: flex;
+    float: right;
+    float: top;
+    margin-top: -100px;
+    margin-right: 40px;
+}
+/*購物車*/
+.avater-frame1{
+    width: 70px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
+    background-image: url("購物車.png"); 
+    background-size: cover;
+    background-position: center;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    display: flex;
+    float: right;
+    float: top;
+    margin-right: 20px;
+}
+/*大頭貼*/
+.avater-frame2{
+    width: 70px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: #FFDBA1;;
+    background-image: url("大頭貼.png"); 
+    background-size: cover;
+    background-position: center;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    display: flex;
+    float: right;
+    float: top;
+}
+/*登出*/
+.a2{
+    text-decoration: none;
+    font-family: "Arial";
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    outline-style: none;
+    color: #00159F;
+    border: 5px solid #FFDBA1; 
+    background-color:#ffffff;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+/*表頭下空間*/
+.place1{
+    margin-top: 350px;
+}
+/*連結*/
+.a1{
+    text-decoration: none;
+    font-family: "Arial";
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    outline-style: none;
+    color: #00159F;
+    border: 3px solid #ffffff; 
+    background-color:#BDE0F4;
+    border-radius: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+}
+
+/* Add Attraction Form */
+.add-attraction-form {
+    width: 50%;
+    margin: 150px auto; 
+    padding: 20px;
+    background-color: #d1dfe4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-attraction-form h2 {
+    margin-bottom: 20px;
+}
+
+.add-attraction-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-attraction-form input[type="text"],
+.add-attraction-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d4adad;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.add-attraction-form textarea {
+    height: 100px;
+}
+
+.add-attraction-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #7092BE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-attraction-form input[type="submit"]:hover {
+    background-color: #7092BE;
+}
+
+/* 自訂下拉選單外觀 */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* 選項樣式 */
+.select-wrapper select option {
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* 選項 hover 狀態 */
+.select-wrapper select option:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* 數據vs新增景點 */
+.links-container {
+    text-align: center;
+}
+
+.links-container a {
+    margin: 0 10px;
+    
+}
